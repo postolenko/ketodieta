@@ -1274,6 +1274,12 @@ h1 {
 
 /*-- Section 3 - Main Page --*/
 
+.sect_3 {
+    background-image: url(img/bg_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .items_sect {
     max-width: 740px;
     padding-top: 11px;
