@@ -928,23 +928,80 @@ h1 {
 
 .steps_chart_wrapp {
     background: rgba(33, 53, 8, .7);
+    /*min-height: 70px;*/
+    padding: 38px 0;
 }
 
 .steps_chart {
     display: flex;
+    justify-content: center;
 }
 
 .steps_chart li {
     display: inline-block;
     vertical-align: top;
+    width: 36px;
+    height: 27px;
+    background-image: url(img/step_line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.steps_chart li:nth-child(1) {
+    background-image: url(img/step_line_first.png);
+}
+
+.steps_chart li:last-child {
+    background-image: url(img/step_line_last.png);
 }
 
 .steps_chart li img {
+    display: none;
+    position: relative;
+    top: -14px;
+    left: -3px;
+}
 
+.steps_chart li.active img {
+    display: block;
 }
 
 .percent_val {
+    display: none;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 900;
+    color: #86de13;
+    position: relative;
+    top: -14px;
+    left: -4px;
+}
 
+.steps_chart li.active .percent_val {
+    display: block;
+}
+
+.step_name {
+    opacity: .5;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.steps_chart li .step_name  {
+    display: none;
+    position: relative;
+    top: -17px;
+    left: -2px;
+}
+
+.steps_chart li.active .step_name  {
+    display: block;
 }
 
 .h2_wrapp {
