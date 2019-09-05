@@ -1,1 +1,1 @@
-# http://postolenko.github.io/prospect/index.html
+# http://postolenko.github.io/ketodieta/index.html
